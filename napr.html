@@ -10,16 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 <title>Туристическое агентство "Nemo"</title>
-<script>
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-          document.getElementById('data').innerHTML = xhr.responseText;
-      }
-  };
-xhr.open('GET', 'Turnemo/turnemo.github.io/access_db.php', true);
-  xhr.send();
-</script>
+
 <script type="text/javascript">
 
     window.onscroll = function() {scrollFunction()};
@@ -271,16 +262,17 @@ font-weight:700;
 	</a>
 	<button onclick="topFunction()" id="myBtn" title="Наверх">Наверх</button>
 </font>
-  <div id="data" style="background-color: #FFF; color: #000; font-size: 16px;"></div> 
-  <script> 
-    var xhr = new XMLHttpRequest(); 
-    xhr.onreadystatechange = function() { 
-        if (xhr.readyState === 4 && xhr.status === 200) { 
-            document.getElementById('data').innerHTML = xhr.responseText; 
-        } 
-    }; 
-xhr.open('GET', 'Turnemo/turnemo.github.io/access_db.php', true); 
-    xhr.send(); 
-  </script> 
+<div id="data"></div>
+
+<script>
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        document.getElementById('data').innerHTML = xhr.responseText;
+    }
+};
+xhr.open('GET', 'Turnemo/turnemo.github.io/access_db.php', true);
+xhr.send();
+</script>
 </body>
 </html>
