@@ -1,5 +1,5 @@
 <?php
-$db_path = 'C:\Users\elena\Desktop\пп\database.accdb';
+$db_path = 'database.accdb';
 $conn = new COM('ADODB.Connection');
 $conn->Open("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=$db_path");
 
