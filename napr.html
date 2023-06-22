@@ -271,16 +271,16 @@ font-weight:700;
 	</a>
 	<button onclick="topFunction()" id="myBtn" title="Наверх">Наверх</button>
 </font>
-  <div id="data" style=""></div>
-  <script>
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('data').innerHTML = xhr.responseText;
-        }
-    };
-xhr.open('GET', 'access_db.php', true);
-    xhr.send();
-  </script>
+  <div id="data" style="background-color: #FFF; color: #000; font-size: 16px;"></div> 
+  <script> 
+    var xhr = new XMLHttpRequest(); 
+    xhr.onreadystatechange = function() { 
+        if (xhr.readyState === 4 && xhr.status === 200) { 
+            document.getElementById('data').innerHTML = xhr.responseText; 
+        } 
+    }; 
+xhr.open('GET', 'access_db.php', true); 
+    xhr.send(); 
+  </script> 
 </body>
 </html>
