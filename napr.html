@@ -262,17 +262,5 @@ font-weight:700;
 	</a>
 	<button onclick="topFunction()" id="myBtn" title="Наверх">Наверх</button>
 </font>
-<div id="data"></div>
-
-<script>
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        document.getElementById('data').innerHTML = xhr.responseText;
-    }
-};
-xhr.open('GET', 'Turnemo/turnemo.github.io/access_db.php', true);
-xhr.send();
-</script>
 </body>
 </html>
